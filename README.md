@@ -4,33 +4,41 @@
 [![Status](https://img.shields.io/badge/status-active-16a34a)](https://github.com/Gratonite-Labs/mobile)
 [![Docs](https://img.shields.io/badge/source%20of%20truth-main%20repo-2563eb)](https://github.com/CoodayeA/Gratonite)
 
-Mobile client for Gratonite, built with Expo and React Native.
+Mobile client for Gratonite — a privacy-first, open-source alternative to Discord.
 
-This repo covers the mobile experience for Gratonite across iOS and Android, including chat, guild navigation, DMs, voice-related UX, and account/session flows.
+## What This Covers
 
-## Canonical Source Of Truth
+- Cross-platform iOS and Android app
+- Real-time messaging, DMs, group DMs, threads
+- Push notifications
+- Voice/video calls
+- Guild management and discovery
+- End-to-end encryption for private messages
 
-The most current documentation and implementation reference live in:
+## Tech Stack
 
-- [CoodayeA/Gratonite](https://github.com/CoodayeA/Gratonite)
-- Canonical mobile path: `apps/mobile`
+| Component | Technology |
+|-----------|-----------|
+| Framework | Expo, React Native |
+| Navigation | React Navigation |
+| Realtime | Socket.IO Client |
+| Voice | LiveKit React Native SDK |
 
-If documentation or behavior differs, use the main `Gratonite` repo as the current reference.
+## Platform-Specific Repos
 
-## Current Focus
+- [Gratonite-Labs/ios](https://github.com/Gratonite-Labs/ios) — iOS-specific work
+- [Gratonite-Labs/android](https://github.com/Gratonite-Labs/android) — Android-specific work
 
-- Expo + React Native app shell
-- Navigation and app state
-- Realtime messaging and API integration
-- Voice-related mobile flows
-- Account, settings, and guild UX
+## Canonical Source of Truth
+
+All source code lives in the main monorepo:
+
+- [CoodayeA/Gratonite](https://github.com/CoodayeA/Gratonite) — path: `apps/mobile/`
+
+If anything in this repo conflicts with the main repo, the main repo is authoritative.
 
 ## Related Repositories
 
-- [Gratonite-Labs/api](https://github.com/Gratonite-Labs/api)
-- [Gratonite-Labs/ios](https://github.com/Gratonite-Labs/ios)
-- [Gratonite-Labs/android](https://github.com/Gratonite-Labs/android)
-
-## Notes
-
-This README stays deliberately short to avoid drifting out of sync with the main project.
+- [Gratonite-Labs/api](https://github.com/Gratonite-Labs/api) — Backend API
+- [Gratonite-Labs/web](https://github.com/Gratonite-Labs/web) — Web client
+- [Gratonite-Labs/desktop](https://github.com/Gratonite-Labs/desktop) — Desktop client
